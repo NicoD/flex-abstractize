@@ -1,0 +1,31 @@
+Flex abstractize is a clean implentation of the abstract notion into ActionScript.
+It use Metatag and reflexion.
+
+The differences with the other abstract implementation are:
+	- clean implementation
+	- easy to read
+	- works with classes and methods
+	- works with any abstract/concrete class hierarchy
+	
+	
+Example: 
+
+public class A {
+	// constructor
+	public class A():void {
+		abstractize(this)
+	}
+
+	public class f():void {}
+
+	[Abstract]
+	public class f2():void {}
+}
+
+
+public class B extends A {
+	public class f2():void {} // throws an error if this method is not set
+}
+
+
+In the current release, this functionality  is added as a function in the global package in order to keep it as simple as possible (no imports needed, no static calls) and because it should be IMO a build in functionality.
