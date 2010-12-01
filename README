@@ -8,8 +8,8 @@ The differences with the other abstract implementation are:
 	- works with any abstract/concrete class hierarchy
 	
 	
-Example: 
-
+Example:
+[Abstract]
 public class A {
 	// constructor
 	public class A():void {
