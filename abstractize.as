@@ -34,14 +34,14 @@ package {
 	 * [Abstract]
 	 * public class A {
 	 *		// constructor
-	 *		public class A():void {
+	 *		public function A():void {
 	 *			abstractize(this)
 	 *		}
 	 *	
-	 *		public class f():void {}
+	 *		public function f():void {}
 	 *
 	 *		[Abstract]
-	 *		public class f2():void {}
+	 *		public function f2():void {}
 	 * }
 	 * </code>
 	 *

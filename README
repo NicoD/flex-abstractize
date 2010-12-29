@@ -12,19 +12,19 @@ Example:
 [Abstract]
 public class A {
 	// constructor
-	public class A():void {
+	public function A():void {
 		abstractize(this)
 	}
 
-	public class f():void {}
+	public function f():void {}
 
 	[Abstract]
-	public class f2():void {}
+	public function f2():void {}
 }
 
 
 public class B extends A {
-	public class f2():void {} // throws an error if this method is not set
+	public function f2():void {} // throws an error if this method is not set
 }
 
 
